@@ -1,0 +1,44 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Storyboard x:Key="FadeIn">
+        <DoubleAnimation Storyboard.TargetProperty="Opacity" From="0" To="1" Duration="0:0:0.2"></DoubleAnimation>
+    </Storyboard>
+    <Storyboard x:Key="FadeInDown">
+        <DoubleAnimation Storyboard.TargetProperty="Opacity" From="0" To="1" Duration="0:0:0.8"></DoubleAnimation>
+        <DoubleAnimation Storyboard.TargetProperty="RenderTransform.Y" From="-200" To="0" Duration="0:0:0.5"/>
+    </Storyboard>
+    <Storyboard x:Key="FadeInLeft">
+        <DoubleAnimation Storyboard.TargetProperty="Opacity" From="0" To="1" Duration="0:0:0.8"></DoubleAnimation>
+        <DoubleAnimation Storyboard.TargetProperty="RenderTransform.X" From="-200" To="0" Duration="0:0:0.5"/>
+    </Storyboard>
+
+    <Storyboard x:Key="FadeInRight">
+        <DoubleAnimation Storyboard.TargetProperty="Opacity" From="0" To="1" Duration="0:0:0.8"></DoubleAnimation>
+        <DoubleAnimation Storyboard.TargetProperty="RenderTransform.X" From="200" To="0" Duration="0:0:0.5"/>
+    </Storyboard>
+    <Storyboard x:Key="FadeInUp">
+        <DoubleAnimation Storyboard.TargetProperty="Opacity" From="0" To="1" Duration="0:0:0.8"></DoubleAnimation>
+        <DoubleAnimation Storyboard.TargetProperty="RenderTransform.Y" From="200" To="0" Duration="0:0:0.5"/>
+    </Storyboard>
+
+    <Storyboard x:Key="FadeInTopLeft">
+        <DoubleAnimation Storyboard.TargetProperty="Opacity" From="0" To="1" Duration="0:0:0.8"></DoubleAnimation>
+        <DoubleAnimation Storyboard.TargetProperty="RenderTransform.Y" From="-200" To="0" Duration="0:0:0.5"/>
+        <DoubleAnimation Storyboard.TargetProperty="RenderTransform.X" From="-200" To="0" Duration="0:0:0.5"/>
+    </Storyboard>
+    <Storyboard x:Key="FadeInTopRight">
+        <DoubleAnimation Storyboard.TargetProperty="Opacity" From="0" To="1" Duration="0:0:0.8"></DoubleAnimation>
+        <DoubleAnimation Storyboard.TargetProperty="RenderTransform.Y" From="-200" To="0" Duration="0:0:0.5"/>
+        <DoubleAnimation Storyboard.TargetProperty="RenderTransform.X" From="200" To="0" Duration="0:0:0.5"/>
+    </Storyboard>
+    <Storyboard x:Key="FadeInBottomRight">
+        <DoubleAnimation Storyboard.TargetProperty="Opacity" From="0" To="1" Duration="0:0:0.8"></DoubleAnimation>
+        <DoubleAnimation Storyboard.TargetProperty="RenderTransform.Y" From="200" To="0" Duration="0:0:0.5"/>
+        <DoubleAnimation Storyboard.TargetProperty="RenderTransform.X" From="200" To="0" Duration="0:0:0.5"/>
+    </Storyboard>
+    <Storyboard x:Key="FadeInBottomLeft">
+        <DoubleAnimation Storyboard.TargetProperty="Opacity" From="0" To="1" Duration="0:0:0.8"></DoubleAnimation>
+        <DoubleAnimation Storyboard.TargetProperty="RenderTransform.Y" From="200" To="0" Duration="0:0:0.5"/>
+        <DoubleAnimation Storyboard.TargetProperty="RenderTransform.X" From="-200" To="0" Duration="0:0:0.5"/>
+    </Storyboard>
+</ResourceDictionary>

@@ -1,0 +1,23 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Storyboard x:Key="RotateOut">
+        <DoubleAnimation Storyboard.TargetProperty="Opacity" From="1" To="0" Duration="0:0:0.5" AutoReverse="False"/>
+        <DoubleAnimation Storyboard.TargetProperty="RenderTransform.Angle" From="0" To="180" Duration="0:0:0.5"/>
+    </Storyboard>
+    <Storyboard x:Key="RotateOutDownLeft">
+        <DoubleAnimation Storyboard.TargetProperty="Opacity" From="1" To="0" Duration="0:0:0.5"/>
+        <DoubleAnimation Storyboard.TargetProperty="RenderTransform.Angle" From="0" To="45" Duration="0:0:0.5"/>
+    </Storyboard>
+    <Storyboard x:Key="RotateOutDownRight">
+        <DoubleAnimation Storyboard.TargetProperty="Opacity" From="1" To="0" Duration="0:0:0.5"/>
+        <DoubleAnimation Storyboard.TargetProperty="RenderTransform.Angle" From="0" To="-45" Duration="0:0:0.5"/>
+    </Storyboard>
+    <Storyboard x:Key="RotateOutUpLeft">
+        <DoubleAnimation Storyboard.TargetProperty="Opacity" From="1" To="0" Duration="0:0:0.5"/>
+        <DoubleAnimation Storyboard.TargetProperty="RenderTransform.Angle" From="0" To="-45" Duration="0:0:0.5"/>
+    </Storyboard>
+    <Storyboard x:Key="RotateOutUpRight">
+        <DoubleAnimation Storyboard.TargetProperty="Opacity" From="1" To="0" Duration="0:0:0.5"/>
+        <DoubleAnimation Storyboard.TargetProperty="RenderTransform.Angle" From="0" To="45" Duration="0:0:0.5"/>
+    </Storyboard>
+</ResourceDictionary>

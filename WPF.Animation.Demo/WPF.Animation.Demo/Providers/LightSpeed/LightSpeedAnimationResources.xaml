@@ -1,0 +1,27 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Storyboard x:Key="LightSpeedInRight">
+        <DoubleAnimation Storyboard.TargetProperty="RenderTransform.Children[0].AngleX" From="0" To="30" Duration="0:0:0.5"></DoubleAnimation>
+        <DoubleAnimation Storyboard.TargetProperty="RenderTransform.Children[1].X" From="200" To="0" Duration="0:0:.5"></DoubleAnimation>
+        <DoubleAnimation Storyboard.TargetProperty="Opacity" From="0" To="1" Duration="0:0:.5"></DoubleAnimation>
+        <DoubleAnimation BeginTime="0:0:0.5" Storyboard.TargetProperty="RenderTransform.Children[0].AngleX" To="0" Duration="0:0:0.01"></DoubleAnimation>
+    </Storyboard>
+    <Storyboard x:Key="LightSpeedInLeft">
+        <DoubleAnimation Storyboard.TargetProperty="RenderTransform.Children[0].AngleX" From="0" To="-30" Duration="0:0:0.5"></DoubleAnimation>
+        <DoubleAnimation Storyboard.TargetProperty="RenderTransform.Children[1].X" From="-200" To="0" Duration="0:0:.5"></DoubleAnimation>
+        <DoubleAnimation Storyboard.TargetProperty="Opacity" From="0" To="1" Duration="0:0:.5"></DoubleAnimation>
+        <DoubleAnimation BeginTime="0:0:0.5" Storyboard.TargetProperty="RenderTransform.Children[0].AngleX" To="0" Duration="0:0:0.01"></DoubleAnimation>
+    </Storyboard>
+    <Storyboard x:Key="LightSpeedOutRight">
+        <DoubleAnimation Storyboard.TargetProperty="RenderTransform.Children[0].AngleX" From="0" To="30" Duration="0:0:0.5"></DoubleAnimation>
+        <DoubleAnimation Storyboard.TargetProperty="RenderTransform.Children[1].X" From="0" To="200" Duration="0:0:.5"></DoubleAnimation>
+        <DoubleAnimation Storyboard.TargetProperty="Opacity" From="1" To="0" Duration="0:0:.5"></DoubleAnimation>
+        <DoubleAnimation BeginTime="0:0:0.5" Storyboard.TargetProperty="RenderTransform.Children[0].AngleX" To="0" Duration="0:0:0.01"></DoubleAnimation>
+    </Storyboard>
+    <Storyboard x:Key="LightSpeedOutLeft">
+        <DoubleAnimation Storyboard.TargetProperty="RenderTransform.Children[0].AngleX" From="0" To="-30" Duration="0:0:0.5"></DoubleAnimation>
+        <DoubleAnimation Storyboard.TargetProperty="RenderTransform.Children[1].X" From="0" To="-200" Duration="0:0:.5"></DoubleAnimation>
+        <DoubleAnimation Storyboard.TargetProperty="Opacity" From="1" To="0" Duration="0:0:.5"></DoubleAnimation>
+        <DoubleAnimation BeginTime="0:0:0.5" Storyboard.TargetProperty="RenderTransform.Children[0].AngleX" To="0" Duration="0:0:0.01"></DoubleAnimation>
+    </Storyboard>
+</ResourceDictionary>

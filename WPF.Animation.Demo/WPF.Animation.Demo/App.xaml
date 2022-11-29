@@ -1,0 +1,19 @@
+﻿<Application x:Class="WPF.Animation.Demo.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:WPF.Animation.Demo"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+
+        <ResourceDictionary>
+            <LinearGradientBrush x:Key="brush" >
+                <GradientStop Offset="0" Color="Red"></GradientStop>
+                <GradientStop Offset="1" Color="Green"></GradientStop>
+            </LinearGradientBrush>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Providers/ResourceMerge.xaml"></ResourceDictionary>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+
+    </Application.Resources>
+</Application>

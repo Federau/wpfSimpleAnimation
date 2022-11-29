@@ -1,0 +1,29 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Storyboard x:Key="BackExitDown">
+        <DoubleAnimation From="1" To="0.7" Storyboard.TargetProperty="RenderTransform.Children[0].ScaleX" Duration="0:0:0.2" ></DoubleAnimation>
+        <DoubleAnimation From="1" To="0.7" Storyboard.TargetProperty="RenderTransform.Children[0].ScaleY" Duration="0:0:0.2"></DoubleAnimation>
+        <DoubleAnimation From="1" To="0.5" Storyboard.TargetProperty="Opacity" Duration="0:0:0.2"></DoubleAnimation>
+        <DoubleAnimation BeginTime="0:0:0.2" From="0" To="600" Storyboard.TargetProperty="RenderTransform.Children[1].Y" Duration="0:0:0.8"></DoubleAnimation>
+    </Storyboard>
+    <Storyboard x:Key="BackExitLeft">
+        <DoubleAnimation From="1" To="0.7" Storyboard.TargetProperty="RenderTransform.Children[0].ScaleX" Duration="0:0:0.2"></DoubleAnimation>
+        <DoubleAnimation From="1" To="0.7" Storyboard.TargetProperty="RenderTransform.Children[0].ScaleY" Duration="0:0:0.2"></DoubleAnimation>
+        <DoubleAnimation From="1" To="0.5" Storyboard.TargetProperty="Opacity" Duration="0:0:0.2"></DoubleAnimation>
+        <DoubleAnimation BeginTime="0:0:0.2" From="0" To="-1200" Storyboard.TargetProperty="RenderTransform.Children[1].X" Duration="0:0:0.8"></DoubleAnimation>
+    </Storyboard>
+
+    <Storyboard x:Key="BackExitRight">
+        <DoubleAnimation From="1" To="0.7" Storyboard.TargetProperty="RenderTransform.Children[0].ScaleX" Duration="0:0:0.2"></DoubleAnimation>
+        <DoubleAnimation From="1" To="0.7" Storyboard.TargetProperty="RenderTransform.Children[0].ScaleY" Duration="0:0:0.2"></DoubleAnimation>
+        <DoubleAnimation From="1" To="0.5" Storyboard.TargetProperty="Opacity" Duration="0:0:0.2"></DoubleAnimation>
+        <DoubleAnimation BeginTime="0:0:0.2" From="0" To="1200" Storyboard.TargetProperty="RenderTransform.Children[1].X" Duration="0:0:0.8"></DoubleAnimation>
+    </Storyboard>
+    <Storyboard x:Key="BackExitUp">
+        <DoubleAnimation From="1" To="0.7" Storyboard.TargetProperty="RenderTransform.Children[0].ScaleX" Duration="0:0:0.2"></DoubleAnimation>
+        <DoubleAnimation From="1" To="0.7" Storyboard.TargetProperty="RenderTransform.Children[0].ScaleY" Duration="0:0:0.2"></DoubleAnimation>
+        <DoubleAnimation From="1" To="0.5" Storyboard.TargetProperty="Opacity" Duration="0:0:0.2"></DoubleAnimation>
+        <DoubleAnimation BeginTime="0:0:0.2" From="0" To="-600" Storyboard.TargetProperty="RenderTransform.Children[1].Y" Duration="0:0:0.8"></DoubleAnimation>
+
+    </Storyboard>
+</ResourceDictionary>

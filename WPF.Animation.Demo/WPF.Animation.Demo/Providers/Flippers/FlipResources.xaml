@@ -1,0 +1,27 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Storyboard x:Key="Flip">
+        <DoubleAnimation Storyboard.TargetProperty="RenderTransform.ScaleX" From="1" To="-1" Duration="0:0:1"/>
+        <DoubleAnimation BeginTime="0:0:1" Storyboard.TargetProperty="RenderTransform.ScaleX"  To="1" Duration="0:0:1"/>
+    </Storyboard>
+    <Storyboard x:Key="FlipInX">
+        <DoubleAnimation Storyboard.TargetProperty="RenderTransform.ScaleY" From="0" To="1" Duration="0:0:0.5">
+        </DoubleAnimation>
+        <DoubleAnimation Storyboard.TargetProperty="Opacity" From="0" To="1" Duration="0:0:0.5"/>
+    </Storyboard>
+    <Storyboard x:Key="FlipInY">
+        <DoubleAnimation Storyboard.TargetProperty="RenderTransform.ScaleX" From="0" To="1" Duration="0:0:0.5">
+        </DoubleAnimation>
+        <DoubleAnimation Storyboard.TargetProperty="Opacity" From="0" To="1" Duration="0:0:0.5"/>
+    </Storyboard>
+    <Storyboard x:Key="FlipOutX">
+        <DoubleAnimation Storyboard.TargetProperty="RenderTransform.ScaleY"  To="0" Duration="0:0:0.5">
+        </DoubleAnimation>
+        <DoubleAnimation Storyboard.TargetProperty="Opacity" From="1" To="0" Duration="0:0:0.5"/>
+    </Storyboard>
+    <Storyboard x:Key="FlipOutY">
+        <DoubleAnimation Storyboard.TargetProperty="RenderTransform.ScaleX" To="0" Duration="0:0:0.5">
+        </DoubleAnimation>
+        <DoubleAnimation Storyboard.TargetProperty="Opacity" From="1" To="0" Duration="0:0:0.5"/>
+    </Storyboard>
+</ResourceDictionary>
